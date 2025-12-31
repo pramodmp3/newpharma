@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STACKLY | Cinematic Pharmaceutical Manufacturing</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+    <link rel="stylesheet" href="./ph1.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="dna-loader" id="dna-anim"></div>
+      <p
+        style="
+          letter-spacing: 5px;
+          color: var(--primary);
+          font-weight: 600;
+          margin-top: -40px;
+        "
+      >
+        STACKLY PRECISION
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <!-- <nav id="navbar">
+      <a href="#" class="logo">STACKLY</a>
+      <ul class="nav-links">
+        <li><a href="#about">The Vision</a></li>
+        <li><a href="#excellence">Manufacturing</a></li>
+        <li><a href="#rd">Innovation</a></li>
+        <li><a href="#presence">Global</a></li>
+      </ul>
+      <button
+        class="btn-luxury"
+        style="padding: 0.8rem 1.5rem; background: var(--primary); border: none"
+      >
+        Inquiry
+      </button>
+    </nav> -->
+    <nav class="navbar">
+      <a href="./index.html" class="logo-container nav-logo">
+        <img src="assets/logooo.webp" alt="Company Logo" class="logo-img" />
+      </a>
+
+      <!-- Hamburger Icon for Mobile -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu">
+        <!-- HOME Dropdown -->
+        <li class="nav-item dropdown">
+          <a href="./index.html" class="nav-link"
+            >HOME <i class="fas fa-chevron-down dropdown-arrow"></i
+          ></a>
+          <ul class="dropdown-content">
+            <li><a href="./home2.html">HOME2</a></li>
+          </ul>
+        </li>
+
+        <!-- SERVICES Dropdown -->
+        <li class="nav-item dropdown">
+          <a href="./service.html" class="nav-link"
+            >WHAT WE DO <i class="fas fa-chevron-down dropdown-arrow"></i
+          ></a>
+          <ul class="dropdown-content">
+            <li><a href="./gen.html">Generics</a></li>
+            <li><a href="./api.html">APIs</a></li>
+            <li><a href="./med.html">Innovative Medicines</a></li>
+            <li><a href="./consumer.html">Consumer Health</a></li>
+          </ul>
+        </li>
+
+        <!-- ABOUT Dropdown -->
+        <li class="nav-item dropdown">
+          <a href="./about.html" class="nav-link"
+            >WHO WE ARE <i class="fas fa-chevron-down dropdown-arrow"></i
+          ></a>
+          <ul class="dropdown-content">
+            <li><a href="./about.html">About US</a></li>
+            <li><a href="./members.html">Members</a></li>
+            <li><a href="./faq.html">FAQs</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="./blog.html" class="nav-link">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a href="./dash.html" class="nav-link">DASHBOARD</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">CONTACT</a>
+        </li>
+
+        <!-- Login Button -->
+        <li class="nav-item">
+          <a href="./login.html" class="login-button">
+            <span>LOG IN</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="grain"></div>
+      <div class="hero-images" id="hero-slider">
+        <img src="./assets/h1.webp" class="hero-img" alt="Lab 1" />
+        <img src="./assets/h6.webp" class="hero-img" alt="Lab 2" />
+        <img
+          src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=2000"
+          class="hero-img"
+          alt="Lab 3"
+        />
+        <img src="./assets/h3.webp" class="hero-img" alt="Pharma" />
+        <img src="./assets/h4.webp" class="hero-img" alt="Tech" />
+        <img src="./assets/h5.webp" class="hero-img" alt="Manufacturing" />
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-headline">
+          <span class="reveal-text">Healing Formula</span><br />
+          <span class="reveal-text">Advanced Synthesis</span>
+        </h1>
+        <p class="hero-sub">
+          GLOBAL LEADERS IN PHARMACEUTICAL MANUFACTURING & BIOTECH INNOVATION
+        </p>
+        <div class="hero-btns">
+          <a href="./service.html"
+            ><button class="btn-luxury">Explore Services</button></a
+          >
+          <a href="./404.html">
+            <button
+              class="btn-luxury"
+              style="margin-left: 1rem; background: white; color: black"
+            >
+              Learn More
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-grid">
+        <div class="about-images">
+          <img
+            src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&q=80&w=1000"
+            class="about-img-main gs-reveal-img"
+            alt="Facility"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=600"
+            class="about-img-sub gs-reveal-img"
+            alt="Detail"
+          />
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">The Standard of Excellence</h2>
+          <p style="font-size: 1.1rem; color: #555; margin-bottom: 2rem">
+            At STACKLY, we don't just manufacture medicine; we architect the
+            future of health. Our state-of-the-art facilities across three
+            continents operate with zero-tolerance for error, ensuring that
+            every molecule meets the highest global standards.
+          </p>
+          <ul
+            style="
+              list-style: none;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 1rem;
+            "
+          >
+            <li><strong>✓ GMP Certified</strong></li>
+            <li><strong>✓ AI-Driven QC</strong></li>
+            <li><strong>✓ Sustainable Supply</strong></li>
+            <li><strong>✓ 24/7 Monitoring</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Excellence Grid -->
+    <section id="excellence" style="background: #fbfbfb">
+      <h2 class="section-title" style="text-align: center">
+        Manufacturing Power
+      </h2>
+      <div class="excellence-grid">
+        <div class="excellence-item">
+          <img
+            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200"
+            alt="Ex1"
+          />
+          <div class="excellence-overlay">
+            <h3>High-Throughput Labs</h3>
+            <p>Producing over 2 million units daily.</p>
+          </div>
+        </div>
+        <div class="excellence-item">
+          <img
+            src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80&w=1200"
+            alt="Ex2"
+          />
+          <div class="excellence-overlay">
+            <h3>Robotic Integration</h3>
+            <p>Fully automated sterile environments.</p>
+          </div>
+        </div>
+        <div class="excellence-item">
+          <img src="./assets/ph2.webp" alt="Ex3" />
+          <div class="excellence-overlay">
+            <h3>Biotech Synthesis</h3>
+            <p>Pioneering the next wave of biologics.</p>
+          </div>
+        </div>
+        <div class="excellence-item">
+          <img
+            src="https://images.unsplash.com/photo-1582560475093-ba66accbc424?auto=format&fit=crop&q=80&w=1200"
+            alt="Ex4"
+          />
+          <div class="excellence-overlay">
+            <h3>Quality Assurance</h3>
+            <p>100% traceability for every batch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- R&D Section -->
+    <section id="rd" class="rd-section">
+      <div class="rd-visual">
+        <img src="./assets/ph1.webp" class="mask-hex gs-reveal-img" alt="RD" />
+      </div>
+      <div class="rd-content">
+        <h2 class="section-title">Precision R&D</h2>
+        <p style="margin-bottom: 2rem">
+          Our innovation labs are dedicated to molecular breakthrough and
+          pharmacological optimization. With a focus on patient-centric delivery
+          systems, we are redefining therapeutic efficacy.
+        </p>
+        <a href="./404.html">
+          <button
+            class="btn-luxury"
+            style="color: var(--primary); border-color: var(--primary)"
+          >
+            View Research Papers
+          </button></a
+        >
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-banner">
+      <img
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000"
+        class="stats-bg"
+        alt="Stats BG"
+      />
+      <div class="stat-card">
+        <span class="stat-number" data-target="45">0</span>
+        <span class="stat-label">Countries Served</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="820">0</span>
+        <span class="stat-label">Scientific Patents</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="15">0</span>
+        <span class="stat-label">Global Facilities</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="100">0</span>
+        <span class="stat-label">% Compliance Rate</span>
+      </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section id="presence" class="global-presence">
+      <h2 class="section-title">A Global Footprint</h2>
+      <div class="map-container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg"
+          class="map-img"
+          alt="World Map"
+        />
+        <div class="dot" style="top: 35%; left: 22%"></div>
+        <div class="dot" style="top: 30%; left: 50%"></div>
+        <div class="dot" style="top: 45%; left: 75%"></div>
+        <div class="dot" style="top: 70%; left: 30%"></div>
+        <div class="dot" style="top: 55%; left: 65%"></div>
+      </div>
+    </section>
+
+    <!-- Partners Typography Marquee -->
+    <div class="marquee">
+      <div class="marquee-inner">
+        <span class="partner-name">PFIZER</span>
+        <span class="partner-name">BAYER</span>
+        <span class="partner-name">NOVARTIS</span>
+        <span class="partner-name">ROCHE</span>
+        <span class="partner-name">MERCK</span>
+        <span class="partner-name">SANOFI</span>
+        <span class="partner-name">GLAXOSMITHKLINE</span>
+        <span class="partner-name">ASTRAZENECA</span>
+        <!-- Duplicate for loop -->
+        <span class="partner-name">PFIZER</span>
+        <span class="partner-name">BAYER</span>
+        <span class="partner-name">NOVARTIS</span>
+        <span class="partner-name">ROCHE</span>
+        <span class="partner-name">MERCK</span>
+        <span class="partner-name">SANOFI</span>
+        <span class="partner-name">GLAXOSMITHKLINE</span>
+        <span class="partner-name">ASTRAZENECA</span>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <h2 style="font-size: 4rem; margin-bottom: 2rem">
+        Ready to Synthesize the Future?
+      </h2>
+      <p style="max-width: 600px; margin-bottom: 3rem; opacity: 0.8">
+        Partner with the world's most advanced pharmaceutical manufacturing
+        network.
+      </p>
+      <a href="./404.html"
+        ><button
+          class="btn-luxury"
+          style="background: white; color: var(--primary); padding: 1.5rem 4rem"
+        >
+          Get in Touch
+        </button></a
+      >
+    </section>
+
+    <!-- <footer class="footer-bottom">
+      &copy; 2024 STACKLY Pharmaceutical Manufacturing. All Rights Reserved. |
+      Privacy Policy | Global Ethics
+    </footer> -->
+    <footer class="imax-footer" id="main-footer">
+      <!-- Parallax Background Layers -->
+      <div class="footer-bg-layers">
+        <div class="layer-grain"></div>
+        <div class="molecular-dust" id="dust-layer"></div>
+        <div class="layer-fog" id="fog-layer"></div>
+        <div id="lottie-molecule"></div>
+      </div>
+
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- 1. Brand Core -->
+          <div class="brand-block reveal-el">
+            <div class="tagline">Molecular Precision</div>
+            <a href="./index.html" class="logo-container footer-logo">
+              <img
+                src="./assets/logooo.webp"
+                alt="Company Logo"
+                class="logo-img"
+              />
+            </a>
+            <p>
+              Pioneering high-throughput pharmaceutical manufacturing through
+              automated bio-synthesis. Engineering life, one sequence at a time.
+            </p>
+          </div>
+
+          <!-- 2. Quick Links -->
+          <div class="links-block reveal-el">
+            <h4>The Network</h4>
+            <nav>
+              <a href="./index.html" class="link-item">HOME</a>
+              <a href="./blog.html" class="link-item">BLOG</a>
+              <a href="./contact.html" class="link-item">CONTACT</a>
+              <a href="./about.html" class="link-item">WHO WE ARE</a>
+              <a href="./service.html" class="link-item">WHAT WE DO</a>
+            </nav>
+          </div>
+
+          <!-- 3. Latest News -->
+          <div class="news-section reveal-el">
+            <h4>Global Intelligence</h4>
+            <div class="news-flex">
+              <div class="news-card">
+                <span>Intelligence</span>
+                <h5>Autonomous Bio-Reactors v4.0 Deployment</h5>
+              </div>
+              <div class="news-card">
+                <span>Clinical</span>
+                <h5>Phase III Results: Neural Regeneration Peptide</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Newsletter -->
+        <div class="newsletter-wrap reveal-el">
+          <div class="news-text">
+            <h3>Join the Protocol</h3>
+            <p>Secure transmission of pharmaceutical breakthroughs.</p>
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              placeholder="ENTER TERMINAL EMAIL..."
+              id="email-input"
+            />
+            <button id="submit-btn">Authorize</button>
+          </div>
+        </div>
+
+        <!-- 5. Address & Icons -->
+        <div class="bottom-contact reveal-el">
+          <div class="address-item">
+            <strong>OPERATIONS HUB</strong><br />
+            99 Innovation Way, Tech District<br />
+            Cambridge, MA 02139, USA
+          </div>
+          <div class="address-item">
+            <strong>DIRECT LINE</strong><br />
+            secure@stackly-pharma.com<br />
+            +1 800 999 STACK
+          </div>
+          <!-- 4 SOCIAL ICONS TOTAL -->
+          <div class="social-icons">
+            <div class="social-circle" title="LinkedIn">
+              <a href="./404.html">
+                <svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  /></svg
+              ></a>
+            </div>
+            <div class="social-circle" title="X (Twitter)">
+              <a href="./404.html"
+                ><svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  /></svg
+              ></a>
+            </div>
+            <div class="social-circle" title="Instagram">
+              <a href="./404.html">
+                <svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  /></svg
+              ></a>
+            </div>
+            <div class="social-circle" title="YouTube">
+              <a href="./404.html">
+                <svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Copyright Strip -->
+        <div class="copyright-strip">
+          <div>© 2024 Stackly Pharmaceuticals. Code-Sovereign Entity.</div>
+          <div>Lvl 9 Clearance Required — v4.02</div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="success-msg">Protocol Authorized. Data Encrypted.</div>
+    <script src="./phf1.js"></script>
+    <script src="./ph1.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const dnaAnimation = lottie.loadAnimation({
+        container: document.getElementById("dna-anim"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "https://assets8.lottiefiles.com/packages/lf20_m67f1x6m.json",
+      });
+
+      window.addEventListener("load", () => {
+        const tl = gsap.timeline();
+        tl.to("#loader", {
+          y: "-100%",
+          duration: 1,
+          ease: "expo.inOut",
+          delay: 1,
+        });
+
+        tl.from(
+          ".reveal-text",
+          {
+            y: 100,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out",
+          },
+          "-=0.2"
+        );
+
+        tl.from(
+          ".hero-sub, .hero-btns",
+          {
+            opacity: 0,
+            y: 20,
+            duration: 0.8,
+          },
+          "-=0.5"
+        );
+
+        initHeroSlider();
+      });
+
+      window.addEventListener("scroll", () => {
+        const nav = document.getElementById("navbar");
+        if (window.scrollY > 100) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+
+      function initHeroSlider() {
+        const images = document.querySelectorAll(".hero-img");
+        let currentIndex = 0;
+        gsap.set(images[0], { opacity: 1, scale: 1 });
+
+        function nextSlide() {
+          const nextIndex = (currentIndex + 1) % images.length;
+          const tl = gsap.timeline();
+
+          tl.to(images[currentIndex], {
+            opacity: 0,
+            scale: 1.2,
+            duration: 2,
+            ease: "power2.inOut",
+          });
+
+          tl.fromTo(
+            images[nextIndex],
+            { opacity: 0, scale: 1.1, filter: "brightness(0.7) blur(10px)" },
+            {
+              opacity: 1,
+              scale: 1,
+              filter: "brightness(0.7) blur(0px)",
+              duration: 2,
+              ease: "power2.inOut",
+            },
+            "-=2"
+          );
+          currentIndex = nextIndex;
+        }
+        setInterval(nextSlide, 4000);
+      }
+
+      document.querySelectorAll(".gs-reveal-img").forEach((img) => {
+        gsap.from(img, {
+          scrollTrigger: {
+            trigger: img,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+          },
+          y: 100,
+          opacity: 0,
+          duration: 1.2,
+          ease: "power4.out",
+        });
+      });
+
+      gsap.utils.toArray(".excellence-item").forEach((item) => {
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: "top 90%",
+          },
+          scale: 0.8,
+          opacity: 0,
+          duration: 1,
+          ease: "back.out(1.7)",
+        });
+      });
+
+      const stats = document.querySelectorAll(".stat-number");
+      stats.forEach((stat) => {
+        const target = +stat.getAttribute("data-target");
+        gsap.to(stat, {
+          scrollTrigger: {
+            trigger: stat,
+            start: "top 90%",
+          },
+          innerText: target,
+          duration: 2,
+          snap: { innerText: 1 },
+          ease: "power1.out",
+        });
+      });
+
+      gsap.to(".stats-bg", {
+        scrollTrigger: {
+          trigger: ".stats-banner",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+        y: "-20%",
+        ease: "none",
+      });
+
+      gsap.from(".dot", {
+        scrollTrigger: {
+          trigger: ".map-container",
+          start: "top 70%",
+        },
+        scale: 0,
+        opacity: 0,
+        stagger: 0.2,
+        duration: 1,
+        ease: "elastic.out(1, 0.3)",
+      });
+    </script>
+  </body>
+</html>

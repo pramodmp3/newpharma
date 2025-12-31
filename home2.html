@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STACKLY | Precision Manufacturing, Cinematic Confidence</title>
+    <meta
+      name="description"
+      content="STACKLY provides Hollywood-level pharmaceutical manufacturing solutions, from R&D to large-scale production with clinical precision."
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="STACKLY | Pharmaceutical Manufacturing Excellence"
+    />
+    <meta
+      property="og:description"
+      content="Precision manufacturing solutions for the global pharma industry."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Syncopate:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+    <link rel="stylesheet" href="./ph2.css" />
+  </head>
+  <body class="show-boxes">
+    <div class="film-grain"></div>
+    <div class="vignette"></div>
+    <div class="letter-box top-box"></div>
+    <div class="letter-box bottom-box"></div>
+
+    <!-- LOADER -->
+    <div id="loader">
+      <div id="loader-lottie"></div>
+      <h3 style="color: blueviolet; font-size: 30px; margin-bottom: 30px">
+        STACKLY
+      </h3>
+      <div class="countdown" id="countdown">3</div>
+    </div>
+
+    <!-- HEADER -->
+    <!-- <header>
+      <a href="#" class="logo">STACKLY</a>
+      <nav style="display: flex; gap: 2rem; align-items: center">
+        <a
+          href="#why-stackly"
+          style="
+            color: white;
+            text-decoration: none;
+            font-size: 0.65rem;
+            font-family: var(--font-display);
+            letter-spacing: 2px;
+          "
+          >Advantage</a
+        >
+        <a
+          href="#solutions"
+          style="
+            color: white;
+            text-decoration: none;
+            font-size: 0.65rem;
+            font-family: var(--font-display);
+            letter-spacing: 2px;
+          "
+          >Ecosystem</a
+        >
+        <button
+          class="btn btn-primary"
+          style="padding: 0.5rem 1rem; font-size: 0.55rem; margin: 0"
+        >
+          Inquire
+        </button>
+      </nav>
+    </header> -->
+    <div class="bg-glow"></div>
+
+    <nav class="navbar" id="mainNavbar">
+      <a href="./home2.html" class="logo-container nav-logo">
+        <img src="./assets/logooo.webp" alt="Company Logo" class="logo-img" />
+      </a>
+
+      <div class="nav-content">
+        <ul class="desktop-menu">
+          <li class="menu-item">
+            <a href="" class="menu-link"
+              >Home <span style="font-size: 8px; margin-left: 4px">▼</span></a
+            >
+            <div class="dropdown-pane">
+              <a href="./home2.html" class="dropdown-link">HOME2</a>
+              <a href="./index.html" class="dropdown-link">HOME1</a>
+            </div>
+          </li>
+          <li class="menu-item">
+            <a href="./servee.html" class="menu-link">Services</a>
+          </li>
+          <li class="menu-item">
+            <a href="./career.html" class="menu-link">Careers</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              >About <span style="font-size: 8px; margin-left: 4px">▼</span></a
+            >
+            <div class="dropdown-pane">
+              <a href="./about2.html" class="dropdown-link">ABOUT</a>
+              <a href="./globe.html" class="dropdown-link">STACKLY @ Global</a>
+            </div>
+          </li>
+          <li class="menu-item">
+            <a href="./blog2.html" class="menu-link">Blog</a>
+          </li>
+          <!-- <li class="menu-item"><a href="#" class="menu-link">Contact</a></li> -->
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Desktop Only Button -->
+        <a href="./contact2.html" style="text-decoration: none">
+          <button class="btn-login" id="loginBtn">CONTACT</button></a
+        >
+
+        <div class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+          <svg class="hamburger-svg" viewBox="0 0 100 100">
+            <path class="hamburger-line line-top" d="M 20,30 H 80" />
+            <path class="hamburger-line line-mid" d="M 20,50 H 80" />
+            <path class="hamburger-line line-bot" d="M 20,70 H 80" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-overlay" id="mobileOverlay">
+      <ul class="mobile-menu-list">
+        <li class="mobile-item">
+          <a href="#" class="mobile-link toggle-mobile-dropdown"
+            >Home <span class="arrow">→</span></a
+          >
+          <div class="mobile-dropdown">
+            <a href="./home2.html">HOME2</a>
+            <a href="./index.html">HOME1</a>
+          </div>
+        </li>
+        <li class="mobile-item">
+          <a href="./servee.html" class="mobile-link">Services</a>
+        </li>
+        <li class="mobile-item">
+          <a href="./career.html" class="mobile-link">Careers</a>
+        </li>
+        <li class="mobile-item">
+          <a href="#" class="mobile-link toggle-mobile-dropdown"
+            >About <span class="arrow">→</span></a
+          >
+          <div class="mobile-dropdown">
+            <a href="./about2.html">ABOUT</a>
+            <a href="./globe.html">STACKLY @ Global</a>
+            <!-- <a href="#">Compliance</a> -->
+          </div>
+        </li>
+        <li class="mobile-item">
+          <a href="./blog2.html" class="mobile-link">Blog</a>
+        </li>
+        <!-- <li class="mobile-item"><a href="#" class="mobile-link">Contact</a></li> -->
+      </ul>
+
+      <!-- Mobile Specific Portal Button -->
+      <div class="mobile-cta-container" id="mobileCta">
+        <a href="./contact2.html" style="text-decoration: none"
+          ><button class="mobile-btn-login">CONTACT</button></a
+        >
+      </div>
+    </div>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-slider">
+          <div class="hero-slide active">
+            <img src="./assets/ph2hh1.jpg" class="hero-img" alt="Lab" />
+          </div>
+          <div class="hero-slide">
+            <img src="./assets/ph2h2.avif" class="hero-img" alt="Science" />
+          </div>
+          <div class="hero-slide">
+            <img src="./assets/ph2h3.jpg" class="hero-img" alt="Factory" />
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <span class="section-tag reveal">Premier Pharma Logistics</span>
+          <h1 class="hero-h1 reveal">Precision<br />At Scale<br />In Motion</h1>
+          <p class="hero-sub reveal">
+            Swiss-engineered manufacturing protocols meeting global production
+            demands with absolute clinical accuracy.
+          </p>
+          <div class="reveal">
+            <a href="./servee.html" class="btn btn-primary">Our Ecosystem</a>
+            <a href="./contact2.html" class="btn btn-ghost">Contact Us</a>
+          </div>
+          <div class="hero-trust-badges reveal">
+            <span>◆ cGMP CERTIFIED</span>
+            <span>◆ ISO 9001:2025</span>
+            <span>◆ FDA COMPLIANT</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRAND MARQUEE -->
+      <div class="marquee-wrapper">
+        <div class="marquee-content">
+          <span class="brand-name">Pfizer</span>
+          <span class="brand-name">Roche</span>
+          <span class="brand-name">Novartis</span>
+          <span class="brand-name">Merck</span>
+          <span class="brand-name">AstraZeneca</span>
+          <span class="brand-name">Bayer</span>
+          <span class="brand-name">Sanofi</span>
+          <span class="brand-name">GSK</span>
+          <span class="brand-name">Pfizer</span>
+          <span class="brand-name">Roche</span>
+          <span class="brand-name">Novartis</span>
+          <span class="brand-name">Merck</span>
+          <span class="brand-name">AstraZeneca</span>
+        </div>
+      </div>
+
+      <!-- WHY CHOOSE -->
+      <section id="why-stackly">
+        <span class="section-tag reveal">The Advantage</span>
+        <h2 class="section-title reveal">Why Industry<br />Leaders Trust Us</h2>
+        <p class="section-desc reveal">
+          We integrate advanced automation with high-fidelity monitoring to
+          eliminate variables and guarantee batch consistency.
+        </p>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <span class="why-icon">⌬</span>
+            <h3>Purity Control</h3>
+            <p>
+              Sub-micron visual inspection systems ensuring 99.98% purity across
+              every production cycle.
+            </p>
+          </div>
+          <div class="why-card reveal">
+            <span class="why-icon">⎔</span>
+            <h3>Agile Scale</h3>
+            <p>
+              Modular manufacturing units that allow rapid transition from R&D
+              to mass synthesis.
+            </p>
+          </div>
+          <div class="why-card reveal">
+            <span class="why-icon">♾</span>
+            <h3>Total Visibility</h3>
+            <p>
+              Real-time telemetry and blockchain-backed auditing for complete
+              supply chain transparency.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <div class="stat-strip">
+        <div class="stat-item">
+          <span class="stat-num" data-val="50">0</span>
+          <span class="stat-label">M+ Annual Units</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-val="99.98">0</span>
+          <span class="stat-label">% Purity Grade</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-val="12">0</span>
+          <span class="stat-label">Global Labs</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-val="24">0</span>
+          <span class="stat-label">Hr/Day Security</span>
+        </div>
+      </div>
+
+      <!-- ECOSYSTEM (REARRANGED CAPABILITIES) -->
+      <section id="solutions">
+        <span class="section-tag reveal">Ecosystem</span>
+        <h2 class="section-title reveal">Integrated<br />Solutions</h2>
+        <p class="section-desc reveal">
+          A synchronized production ecosystem designed for the world's most
+          demanding pharmaceutical compounds.
+        </p>
+
+        <div class="ecosystem-container">
+          <!-- Item 1 -->
+          <div class="ecosystem-item reveal">
+            <div class="ecosystem-media">
+              <img
+                src="https://images.unsplash.com/photo-1582719202047-76d3432ee323?auto=format&fit=crop&w=1200&q=80"
+                alt="R&D"
+              />
+            </div>
+            <div class="ecosystem-text">
+              <span class="eco-num">01 / DISCOVERY</span>
+              <h3 class="eco-title">Molecular R&D</h3>
+              <p class="eco-desc">
+                High-fidelity molecular modeling and clinical formulation
+                development using state-of-the-art computational biology.
+              </p>
+              <a href="./404.html" class="btn btn-ghost" style="margin: 0"
+                >Details</a
+              >
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="ecosystem-item reveal">
+            <div class="ecosystem-media">
+              <img
+                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=80"
+                alt="Production"
+              />
+            </div>
+            <div class="ecosystem-text">
+              <span class="eco-num">02 / EXECUTION</span>
+              <h3 class="eco-title">Mass Synthesis</h3>
+              <p class="eco-desc">
+                Large-scale API synthesis and sterile fill-finish operations
+                conducted in Grade A cleanroom environments.
+              </p>
+              <a href="./404.html" class="btn btn-ghost" style="margin: 0"
+                >Scale Up</a
+              >
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="ecosystem-item reveal">
+            <div class="ecosystem-media">
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80"
+                alt="Logistics"
+              />
+            </div>
+            <div class="ecosystem-text">
+              <span class="eco-num">03 / DELIVERY</span>
+              <h3 class="eco-title">Cold Chain Logic</h3>
+              <p class="eco-desc">
+                Global distribution via validated temperature-controlled
+                networks with real-time GPS and stability monitoring.
+              </p>
+              <a href="./404.html" class="btn btn-ghost" style="margin: 0"
+                >Logistics</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AWARDS -->
+      <section id="awards">
+        <span class="section-tag reveal">Excellence</span>
+        <h2 class="section-title reveal">Recent Awards</h2>
+        <div class="awards-list">
+          <div class="award-item reveal">
+            <span class="award-year">2024</span>
+            <span class="award-title">Manufacturer of the Year</span>
+            <span class="award-org">Global Pharma Forum</span>
+          </div>
+          <div class="award-item reveal">
+            <span class="award-year">2023</span>
+            <span class="award-title">Logistics Excellence</span>
+            <span class="award-org">Supply Chain Council</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIMELINE -->
+      <section class="timeline-container" id="timeline-sec">
+        <div class="timeline-track">
+          <div class="timeline-step">
+            <span class="section-tag">Phase 1</span>
+            <h2 class="section-title">Analysis</h2>
+            <p>
+              Automated synthesis testing and molecular viability analysis in
+              Swiss labs.
+            </p>
+          </div>
+          <div class="timeline-step">
+            <span class="section-tag">Phase 2</span>
+            <h2 class="section-title">Validation</h2>
+            <p>
+              Transitioning pilot studies to full-scale mass production lines
+              with rigorous testing.
+            </p>
+          </div>
+          <div class="timeline-step">
+            <span class="section-tag">Phase 3</span>
+            <h2 class="section-title">Global Flow</h2>
+            <p>
+              Global distribution via validated cold-chain secure networks to
+              any continent.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div style="text-align: center; margin-bottom: 3rem">
+          <span class="section-tag reveal">Connect</span>
+          <h2 class="section-title reveal">Request a Quote</h2>
+        </div>
+        <form
+          class="contact-form reveal"
+          onsubmit="event.preventDefault(); handleFormSubmit();"
+        >
+          <div class="input-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="Work Email" required />
+          </div>
+          <div class="input-group">
+            <textarea rows="3" placeholder="Project Description"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%">
+            Initiate Protocol
+          </button>
+        </form>
+        <div
+          id="form-success"
+          style="display: none; text-align: center; margin-top: 2rem"
+        >
+          <p
+            style="
+              font-family: var(--font-display);
+              color: var(--color-primary);
+            "
+          >
+            Transmission Securely Sent.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="cinematic-footer">
+      <!-- Animated Background Elements -->
+      <div class="footer-bg-layers">
+        <div class="grid-overlay"></div>
+        <div class="glow-orb"></div>
+      </div>
+
+      <div class="footer-container">
+        <!-- 1. Brand Section + Socials -->
+        <div class="footer-section brand-block reveal-el">
+          <div id="lottie-molecule"></div>
+          <a href="./home2.html" class="logo-container footer-logo">
+            <img
+              src="./assets/logooo.webp"
+              alt="Company Logo"
+              class="logo-img"
+            />
+          </a>
+          <p class="tagline">
+            Engineering molecular precision to redefine the boundaries of human
+            longevity and healthcare.
+          </p>
+
+          <div class="social-wrapper">
+            <a href="./404.html" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+            <a href="./404.html" class="social-btn" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+            <a href="./404.html" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Quick Links -->
+        <div class="footer-section reveal-el">
+          <h4>Navigation</h4>
+          <ul class="link-list">
+            <li><a href="./home2.html">HOME</a></li>
+            <li><a href="./about2.html">ABOUT US</a></li>
+            <li><a href="./servee.html">SERVICE</a></li>
+            <li><a href="./blog2.html">BLOG</a></li>
+            <li><a href="./career.html">CAREERS</a></li>
+            <li><a href="./contact2.html">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <!-- 3. Latest News -->
+        <div class="footer-section reveal-el">
+          <h4>Insights</h4>
+          <a href="./404.html" class="news-item">
+            <span class="news-date">OCT 24, 2023</span>
+            <span class="news-title"
+              >Phase III Trials: Neuro-Regen Breakthrough</span
+            >
+          </a>
+          <a href="./404.html" class="news-item">
+            <span class="news-date">SEP 12, 2023</span>
+            <span class="news-title">Global Bio-Ethics Summit Keynote</span>
+          </a>
+          <a href="./404.html" class="news-item">
+            <span class="news-date">AUG 05, 2023</span>
+            <span class="news-title"
+              >Stackly Expands to Zurich Research Hub</span
+            >
+          </a>
+        </div>
+
+        <!-- 4. Newsletter -->
+        <div class="footer-section reveal-el">
+          <h4>Intelligence Brief</h4>
+          <p
+            style="
+              font-size: 0.85rem;
+              color: var(--text-muted);
+              margin-bottom: 20px;
+            "
+          >
+            Subscribe to receive exclusive insights into our latest biopharma
+            developments.
+          </p>
+          <form class="newsletter-form" id="subscribeForm">
+            <div class="input-group">
+              <input
+                type="email"
+                placeholder="ENCRYPTED EMAIL ADDRESS"
+                required
+              />
+              <button type="submit" class="btn-subscribe">
+                <span>INITIALIZE ACCESS</span>
+              </button>
+            </div>
+            <div id="success-lottie"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- 5. Bottom Bar & Contact -->
+      <div class="footer-bottom reveal-el">
+        <div class="contact-info">
+          <span>
+            <a href="./404.html">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle></svg
+            ></a>
+            CAMBRIDGE BIOPARK, UK
+          </span>
+          <span>
+            <a href="./404.html">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path></svg
+            ></a>
+            +44 20 7946 0123
+          </span>
+        </div>
+        <div>&copy; 2024 STACKLY PHARMACEUTICALS. PRECISION DRIVEN.</div>
+      </div>
+    </footer>
+    <script src="./phf2.js"></script>
+    <!-- <footer
+      style="
+        padding: 4rem 5%;
+        background: #000;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      "
+    >
+      <a
+        href="#"
+        class="logo"
+        style="display: inline-block; margin-bottom: 1rem"
+        >STACKLY</a
+      >
+      <p style="opacity: 0.3; font-size: 0.7rem">
+        &copy; 2025 STACKLY Switzerland. All Rights Reserved.
+      </p>
+    </footer> -->
+    <script src="./ph2.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // --- Loader Logic ---
+      function initLoader() {
+        const countdownEl = document.getElementById("countdown");
+        let count = 3;
+        const countInterval = setInterval(() => {
+          count--;
+          countdownEl.innerText = count;
+          if (count === 0) clearInterval(countInterval);
+        }, 800);
+
+        lottie.loadAnimation({
+          container: document.getElementById("loader-lottie"),
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: "https://assets5.lottiefiles.com/packages/lf20_of3m7vkn.json",
+        });
+
+        gsap
+          .timeline({
+            onComplete: () => {
+              document.getElementById("loader").style.display = "none";
+              initHeroSlider();
+              initScrollAnimations();
+            },
+          })
+          .to("#loader", {
+            opacity: 0,
+            duration: 1.2,
+            delay: 2.8,
+            ease: "expo.inOut",
+          });
+      }
+
+      // --- Slider ---
+      function initHeroSlider() {
+        const slides = document.querySelectorAll(".hero-slide");
+        let current = 0;
+        setInterval(() => {
+          slides[current].classList.remove("active");
+          current = (current + 1) % slides.length;
+          slides[current].classList.add("active");
+        }, 5000);
+      }
+
+      // --- Animations ---
+      function initScrollAnimations() {
+        gsap.utils.toArray(".reveal").forEach((elem) => {
+          gsap.to(elem, {
+            scrollTrigger: { trigger: elem, start: "top 95%" },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+          });
+        });
+
+        // Horizontal Timeline (Desktop Only)
+        if (window.innerWidth > 768) {
+          const track = document.querySelector(".timeline-track");
+          gsap.to(track, {
+            x: () => -(track.scrollWidth - window.innerWidth),
+            ease: "none",
+            scrollTrigger: {
+              trigger: "#timeline-sec",
+              start: "top top",
+              end: () => "+=" + track.scrollWidth,
+              scrub: 1,
+              pin: true,
+            },
+          });
+        }
+
+        // Stats
+        gsap.utils.toArray(".stat-num").forEach((num) => {
+          const target = parseFloat(num.getAttribute("data-val"));
+          gsap.to(num, {
+            scrollTrigger: { trigger: num, start: "top 95%" },
+            innerText: target,
+            duration: 2,
+            snap: { innerText: 0.01 },
+            ease: "power1.out",
+          });
+        });
+      }
+
+      function handleFormSubmit() {
+        document.querySelector(".contact-form").style.display = "none";
+        document.getElementById("form-success").style.display = "block";
+      }
+
+      window.addEventListener("load", initLoader);
+    </script>
+  </body>
+</html>
